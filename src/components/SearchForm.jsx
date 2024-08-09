@@ -30,7 +30,9 @@ function SearchForm() {
         },
         (error) => {
           console.error("Error getting geolocation:", error);
-          alert("Unable to detect your location. Please enter it manually.");
+          alert(
+            "Unable to detect your location. Please ensure that your browser's location services are enabled, or enter your location manually."
+          );
         },
         geoOptions
       );
